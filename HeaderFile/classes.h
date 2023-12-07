@@ -1,1 +1,6 @@
-#pragma once
+class myClass {
+private:
+
+public:
+
+};
