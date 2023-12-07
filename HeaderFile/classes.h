@@ -1,6 +1,6 @@
 class myClass {
-private:
-
 public:
-
+	string firstName;
+	string lastName;
+	int age;
 };
