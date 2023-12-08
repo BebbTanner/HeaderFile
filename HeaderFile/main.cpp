@@ -20,7 +20,7 @@ int main() {
 
 	/*This is an if-else statemen that will repeat the function
 	to allow the user to re-enter their information.*/
-	if (userResponse != 'y' || userResponse != 'Y') {
+	if (userResponse == 'y' || userResponse == 'Y') {
 		cout << "Lets try again. " << endl;
 		userInfo();
 	}
