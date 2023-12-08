@@ -5,6 +5,7 @@ It will ask for the user's first and last name, as well as their age.*/
 using namespace std;
 
 int main() {
+	char userResponse;
 	myClass C;
 
 	/*This block is going to ask the user to input their first name*/
@@ -20,9 +21,17 @@ int main() {
 	
 	Finally, in this same block it will ask the user for their age.*/
 	cout << "Welcome, " << C.firstName << " " << C.lastName << endl;
-	cout << "The last thing I need from you is your age." << endl;
-	cout << "Please enter you age: " << endl;
+	cout << "The last thing I need from you is your age. Please enter your age: " << endl;
 	cin >> C.age;
+
+	/*This statement is going to print out all of the information to the user.*/
+	cout << "The final information that you have added is: " 
+		<< C.firstName << " " << C.lastName << " " << C.age << endl;
+
+	/*This will ask the user to confirm their age. If it is not correct 
+	I will be adding something to repeat the process*/
+	cout << "Is this the correct information?(Y or N): " << endl;
+	cin >> userResponse;
 
 
 	return 0;
