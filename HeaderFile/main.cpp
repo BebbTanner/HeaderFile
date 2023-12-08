@@ -18,6 +18,13 @@ int main() {
 	cout << "Is this the correct information?(Y or N): " << endl;
 	cin >> userResponse;
 
+	/*This is an if-else statemen that will repeat the function
+	to allow the user to re-enter their information.*/
+	if (userResponse != 'y' || userResponse != 'Y') {
+		cout << "Lets try again. " << endl;
+		userInfo();
+	}
+
 	return 0;
 }
 
